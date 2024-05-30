@@ -1,0 +1,19 @@
+version: '3'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - API_KEY=89379e5fe7dc43d60fc6c8eed703e3a9
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend
