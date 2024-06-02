@@ -1,7 +1,7 @@
 # Weatherapp
 
 In this project, I containerized both the front-end and back-end applications using Docker. After that, I created a Docker Compose file to define and manage these two containerized applications. We utilized the OpenWeatherMap API to retrieve weather forecasting data Unfortunately, we did not implement code to visualize the API data on our front end. To make the application public and share it with others, I used AWS as the cloud hosting tool. I created an EC2 instance, and inside this instance, our application is running as a containerized service. Here is how our system looks like:
-[architecture](./image/architecture.jpg)
+![architecture](./image/architecture.jpg)
 
 Using Certbot, I established a secure connection to our DNS, which is a free DuckDNS server. You can access the web application at [adiya-weather.duckdns.orgp](https://adiya-weather.duckdns.org/)
 
